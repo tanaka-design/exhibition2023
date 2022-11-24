@@ -1,0 +1,36 @@
+.nav_ul {
+  display: flex;
+}
+.nav_ul li {
+  padding: 12px;
+}
+
+.topView {
+  display: flex;
+  height: 100vh;
+}
+
+.topView_left, .topView_right {
+  width: 50%;
+}
+
+.topView_left {
+  text-align: center;
+}
+.topView_right {
+  padding-left: 8vw;
+}
+
+.topView_right_item {
+  display: flex;
+  height: 70%;
+  justify-content: center;
+  align-items: center;
+}
+.topView_right_item .texts {
+  width: 100%;
+}
+.topView_right_item .texts h1 {
+  font-size: 3rem;
+  margin: 50px 0;
+}/*# sourceMappingURL=style.css.map */
