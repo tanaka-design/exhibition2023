@@ -1,4 +1,7 @@
 @charset "UTF-8";
+img {
+    display: block;
+}
 .nav_ul {
     display: flex;
 
@@ -16,7 +19,8 @@
 .topView_left {
     text-align: center;
     img {
-        
+        height: 100vh;
+        margin: 0 auto;
     }
 }
 .topView_right {
