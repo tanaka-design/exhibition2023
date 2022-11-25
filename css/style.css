@@ -2,6 +2,10 @@ img {
   display: block;
 }
 
+main {
+  position: relative;
+}
+
 .nav_ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -25,6 +29,7 @@ img {
 
 .topView_left {
   text-align: center;
+  background-color: #EAF3F3;
 }
 
 .topView_left img {
@@ -56,5 +61,19 @@ img {
 .topView_right_item .texts h1 {
   font-size: 3rem;
   margin: 50px 0;
+}
+
+.main_logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  z-index: 1;
+  height: 186px;
+  width: 186px;
+  border-radius: 50%;
+  background-color: #FFF;
 }
 /*# sourceMappingURL=style.css.map */
