@@ -29,12 +29,18 @@ main {
 
 .topView_left {
   text-align: center;
+
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+
   background-color: #EAF3F3;
 }
 
 .topView_left img {
   height: 100vh;
   margin: 0 auto;
+
 }
 
 .topView_right {
@@ -62,6 +68,30 @@ main {
   font-size: 3rem;
   margin: 50px 0;
 }
+
+
+footer {
+  height: 100px;
+  background-color: #efefef;
+}
+
+.footerIcon_box {
+  display: flex;
+  justify-content: center;
+}
+
+.footerIcon {
+  padding: 25px 20px 10px 20px;
+}
+
+.footerIcon a {
+  color: #555;
+}
+
+.footer_text {
+  text-align: center;
+  font-size: 12px;
+}/*# sourceMappingURL=style.css.map */
 
 .main_logo {
   position: absolute;
