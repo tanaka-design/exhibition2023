@@ -8,18 +8,13 @@ img {
 }
 
 .nav_ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .nav_ul li {
   padding: 12px;
 }
 
 .topView {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 100vh;
 }
@@ -35,7 +30,6 @@ img {
   height: fit-content;
   background-color: #EAF3F3;
 }
-
 .topView_left img {
   height: 100vh;
   margin: 0 auto;
@@ -46,62 +40,46 @@ img {
 }
 
 .topView_right_item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 70%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 .topView_right_item .texts {
   width: 100%;
 }
-
 .topView_right_item .texts h1 {
   font-size: 3rem;
   margin: 50px 0;
 }
 
+.works {
+  text-align: center;
+}
 .works h2 {
   margin: 60px 0 50px 0;
   font-size: 2rem;
   text-align: center;
 }
-
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: inherit;
+.works *,
+.works *:before,
+.works *:after {
   box-sizing: inherit;
 }
-
-html {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: 62.5%;
-}
-
-.btn,
-a.btn,
-button.btn {
-  font-size: 1.6rem;
-  font-weight: 700;
+.works .btn, .works a.btn {
+  font-size: 1.2rem;
   line-height: 1.5;
+  font-weight: 300;
   position: relative;
   display: inline-block;
-  padding: 1rem 4rem;
+  padding: 10px;
+  margin: 3rem 0;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  -webkit-transition: all .8s;
-  transition: all .8s;
+  transition: all 0.8s;
   text-align: center;
   vertical-align: middle;
   text-decoration: none;
@@ -109,62 +87,47 @@ button.btn {
   color: #212529;
   border-radius: 35px;
 }
-
-a.btn-flat {
+.works a.btn-flat {
   overflow: hidden;
-
-  padding: 1.5rem 6rem;
-
+  padding: 0.8rem 3.2rem;
   color: #000;
+  border: solid;
   border-radius: 35px;
   background: #fff;
 }
-
-a.btn-flat span {
+.works a.btn-flat span {
   position: relative;
 }
-
-a.btn-flat:before {
+.works a.btn-flat:before {
   position: absolute;
   top: 0;
   left: 0;
-
   width: 150%;
   height: 500%;
-
   content: "";
-  -webkit-transition: all .8s ease-in-out;
-  transition: all .8s ease-in-out;
-  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  transition: all 0.8s ease-in-out;
   transform: translateX(-98%) translateY(-25%) rotate(45deg);
-
   background: #000;
 }
-
-a.btn-flat:hover:before {
-  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+.works a.btn-flat:hover:before {
   transform: translateX(-9%) translateY(-25%) rotate(45deg);
 }
-
-.btn:hover {
+.works .btn:hover {
   color: #FFF;
 }
 
 /*==================================================
 スライダーのためのcss
 ===================================*/
-/* .slider { */
+.slider {
   /*slickのJSで書かれるタグ内、スライド左右の余白調整*/
-/* } */
-
+}
 .slider img {
   width: 75%;
   height: auto;
 }
-
 .slider .slick-slide {
-  margin: 0;
-  /*スライド左右の余白調整*/
+  margin: 0; /*スライド左右の余白調整*/
 }
 
 footer {
@@ -173,12 +136,8 @@ footer {
 }
 
 .footerIcon_box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .footerIcon {
@@ -206,5 +165,4 @@ footer {
   width: 186px;
   border-radius: 50%;
   background-color: #FFF;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

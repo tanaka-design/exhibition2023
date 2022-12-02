@@ -48,81 +48,79 @@ img {
 
 //ここからworks//
 .works {
+    text-align: center;
     h2 {
         margin: 60px 0 50px 0;
         font-size: 2rem;
         text-align: center;
     }
-        .works_btn {
-            /*線の基点とするためrelativeを指定*/
-            position: relative;
-            /*ボタンの形状*/
-            display: inline-block;
-            // border: solid 1px #000;
-            // border-radius: 35px;
-            padding: 10px 20px;
-            background:#fff;
-            text-decoration: none;
-            outline: none;
-            /*アニメーションの指定*/
-            transition: all .3s;
-            transition-delay: .7s;/*0.7秒遅れてアニメーション*/
-            &:hover {
-                background:#fff;
-                color: #fff;
-                &::before {
-                    right: 0;
-                    top: 0;
-                    transition-delay: 0.2s;
-                    width: 100%;
-                }
-                &::after {
-                    left: 0;
-                    bottom: 0;
-                    transition-delay: 0.2s;
-                    width: 100%;
-                }
-                span&:before,
-                span&:after {
-                    height: 100%;
-                }
-            }
-            span {
-                display: block;
-                &:before,
-                &:after {
-                    content:"";
-                    /*絶対配置で線の位置を決める*/   
-                    position: absolute;
-                    /*線の形状*/
-                    width:1px;
-                    height:0;
-                    background: #fff;
-                    /*アニメーションの指定*/
-                    transition: all 0.2s linear;
-                }
-                &:before {
-                    left: 0;
-                    top: 0;
-                }
-                &:after {
-                    right: 0;
-                    bottom: 0;
-                }
-            }
-            &::before,
-            &::after {
-                content:"";
-                /*絶対配置で線の位置を決める*/   
-                position: absolute;
-                /*線の形状*/   
-                width: 0;
-                height: 1px;
-                background: #888;
-                /*アニメーションの指定*/
-                transition: all 0.2s linear;
-            }
-        }
+    *,
+    *:before,
+    *:after {
+        -webkit-box-sizing: inherit;
+        box-sizing: inherit;
+    }
+
+.btn,a.btn {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight: 300;
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    margin: 3rem 0;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all .8s;
+    transition: all .8s;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #212529;
+    border-radius: 35px;
+}
+a.btn-flat {
+    overflow: hidden;
+    padding: .8rem 3.2rem;
+    color: #000;
+    border: solid;
+    border-radius: 35px;
+    background: #fff;
+}
+
+a.btn-flat span {
+    position: relative;
+}
+
+a.btn-flat:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 150%;
+    height: 500%;
+
+    content: "";
+    -webkit-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+    -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+    transform: translateX(-98%) translateY(-25%) rotate(45deg);
+
+    background: #000;
+    }
+
+    a.btn-flat:hover:before {
+    -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+    transform: translateX(-9%) translateY(-25%) rotate(45deg);
+    }
+
+    .btn:hover {
+    color: #FFF;
+    }
 }
 
 /*==================================================
