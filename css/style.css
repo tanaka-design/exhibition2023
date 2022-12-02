@@ -1,4 +1,10 @@
 @charset "UTF-8";
+body {
+  font-family: noto-serif, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 img {
   display: block;
 }
@@ -47,10 +53,19 @@ img {
 }
 .topView_right_item .texts {
   width: 100%;
+  letter-spacing: 2px;
+  line-height: 1.8rem;
 }
 .topView_right_item .texts h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
+  letter-spacing: 0.5rem;
   margin: 50px 0;
+  font-weight: 600;
+}
+.topView_right_item .texts h2 {
+  letter-spacing: 0.2rem;
+  margin-bottom: 10px;
+  font-weight: 500;
 }
 
 .works {
