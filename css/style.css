@@ -1,8 +1,9 @@
+@charset "UTF-8";
 img {
   display: block;
 }
 
-main {
+.topView {
   position: relative;
 }
 
@@ -29,18 +30,15 @@ main {
 
 .topView_left {
   text-align: center;
-
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-
   background-color: #EAF3F3;
 }
 
 .topView_left img {
   height: 100vh;
   margin: 0 auto;
-
 }
 
 .topView_right {
@@ -69,6 +67,46 @@ main {
   margin: 50px 0;
 }
 
+.works h2 {
+  margin: 60px 0 50px 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.works a {
+  text-decoration: none;
+}
+
+.works p {
+  text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  padding: 10px 30px;
+  border: solid 1px #000;
+  border-radius: 25px;
+}
+
+/*==================================================
+スライダーのためのcss
+===================================*/
+.slider {
+  /*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+}
+
+.slider img {
+  width: 75%;
+  height: auto;
+}
+
+.slider .slick-slide {
+  margin: 0;
+  /*スライド左右の余白調整*/
+}
 
 footer {
   height: 100px;
@@ -76,8 +114,12 @@ footer {
 }
 
 .footerIcon_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footerIcon {
@@ -91,11 +133,11 @@ footer {
 .footer_text {
   text-align: center;
   font-size: 12px;
-}/*# sourceMappingURL=style.css.map */
+}
 
 .main_logo {
   position: absolute;
-  top: 50%;
+  top: 50vh;
   left: 50%;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
