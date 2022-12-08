@@ -57,7 +57,7 @@ img {
   line-height: 1.8rem;
 }
 .topView_right_item .texts h1 {
-  font-size: 3.5rem;
+  font-size: 3.8rem;
   letter-spacing: 0.5rem;
   margin: 50px 0;
   font-weight: 600;
@@ -68,20 +68,20 @@ img {
   font-weight: 500;
 }
 
-.works {
+.top_works {
   text-align: center;
 }
-.works h2 {
+.top_works h2 {
   margin: 60px 0 50px 0;
   font-size: 2rem;
   text-align: center;
 }
-.works *,
-.works *:before,
-.works *:after {
+.top_works *,
+.top_works *:before,
+.top_works *:after {
   box-sizing: inherit;
 }
-.works .btn, .works a.btn {
+.top_works .btn, .top_works a.btn {
   font-size: 1.2rem;
   line-height: 1.5;
   font-weight: 300;
@@ -102,7 +102,7 @@ img {
   color: #212529;
   border-radius: 35px;
 }
-.works a.btn-flat {
+.top_works a.btn-flat {
   overflow: hidden;
   padding: 0.8rem 3.2rem;
   color: #000;
@@ -110,10 +110,10 @@ img {
   border-radius: 35px;
   background: #fff;
 }
-.works a.btn-flat span {
+.top_works a.btn-flat span {
   position: relative;
 }
-.works a.btn-flat:before {
+.top_works a.btn-flat:before {
   position: absolute;
   top: 0;
   left: 0;
@@ -124,11 +124,15 @@ img {
   transform: translateX(-98%) translateY(-25%) rotate(45deg);
   background: #000;
 }
-.works a.btn-flat:hover:before {
+.top_works a.btn-flat:hover:before {
   transform: translateX(-9%) translateY(-25%) rotate(45deg);
 }
-.works .btn:hover {
+.top_works .btn:hover {
   color: #FFF;
+}
+
+.works {
+  text-align: center;
 }
 
 /*==================================================
