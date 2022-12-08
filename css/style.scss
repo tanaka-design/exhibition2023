@@ -1,8 +1,13 @@
 @charset "UTF-8";
+body {
+    font-family: noto-serif, serif;
+    font-weight: 400;
+    font-style: normal;
+}
 img {
     display: block;
 }
-main {
+.topView {
     position: relative;
 }
 .nav_ul {
@@ -39,13 +44,116 @@ main {
 
     .texts {
         width: 100%;
-    }
-    .texts h1 {
-        font-size: 3rem;
-        margin: 50px 0;
+        letter-spacing: 2px;
+        line-height: 1.8rem;
+        h1 {
+            font-size: 3.8rem;
+            letter-spacing: .5rem;
+            margin: 50px 0;
+            font-weight: 600;
+        }
+        h2 {
+            letter-spacing: .2rem;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
     }
 }
 
+.top_works {
+    text-align: center;
+    h2 {
+        margin: 60px 0 50px 0;
+        font-size: 2rem;
+        text-align: center;
+    }
+    *,
+    *:before,
+    *:after {
+        -webkit-box-sizing: inherit;
+        box-sizing: inherit;
+    }
+
+.btn,a.btn {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight: 300;
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    margin: 3rem 0;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all .8s;
+    transition: all .8s;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #212529;
+    border-radius: 35px;
+}
+a.btn-flat {
+    overflow: hidden;
+    padding: .8rem 3.2rem;
+    color: #000;
+    border: solid;
+    border-radius: 35px;
+    background: #fff;
+}
+
+a.btn-flat span {
+    position: relative;
+}
+
+a.btn-flat:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 150%;
+    height: 500%;
+
+    content: "";
+    -webkit-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+    -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+    transform: translateX(-98%) translateY(-25%) rotate(45deg);
+
+    background: #000;
+    }
+
+    a.btn-flat:hover:before {
+    -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+    transform: translateX(-9%) translateY(-25%) rotate(45deg);
+    }
+
+    .btn:hover {
+    color: #FFF;
+    }
+}
+
+// Worksここから
+.works {
+    text-align: center;
+}
+
+/*==================================================
+スライダーのためのcss
+===================================*/
+.slider {
+    img {
+        width: 75%;
+        height: auto;
+    }
+    /*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+    .slick-slide {
+        margin: 0;/*スライド左右の余白調整*/
+    }
+}
 
 // footer //
 footer{
@@ -69,7 +177,7 @@ footer{
 
 .main_logo {
     position: absolute;
-    top: 50%;
+    top: 50vh;
     left: 50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
@@ -80,3 +188,4 @@ footer{
     border-radius: 50%;
     background-color: #FFF;
 }
+
