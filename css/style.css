@@ -68,6 +68,20 @@ img {
   font-weight: 500;
 }
 
+.main_logo {
+  position: absolute;
+  top: 50vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  z-index: 1;
+  height: 186px;
+  width: 186px;
+  border-radius: 50%;
+  background-color: #FFF;
+}
+
 .top_works {
   text-align: center;
 }
@@ -134,6 +148,27 @@ img {
 .works {
   text-align: center;
 }
+.works h1 {
+  line-height: 1.6rem;
+}
+.works h1 span {
+  font-size: 1.2rem;
+}
+.works section {
+  padding: 1.5rem 0;
+}
+.works section .works_item {
+  width: 95%;
+  padding: 1rem 3rem;
+  margin-top: 0.6rem;
+  margin: 0.6rem auto 0 auto;
+  border-radius: 4%;
+}
+.works section .works_item:hover {
+  background-color: rgba(204, 210, 226, 0.26);
+  transition-duration: 0.8s;
+  cursor: pointer;
+}
 
 .box {
   height: 500px;
@@ -194,14 +229,16 @@ img {
 /*==================================================
 スライダーのためのcss
 ===================================*/
-.slider {
+.slider, .slider2 {
   /*slickのJSで書かれるタグ内、スライド左右の余白調整*/
 }
-.slider img {
-  width: 75%;
-  height: auto;
+.slider .slider_div, .slider2 .slider_div {
+  margin: 1rem -6rem;
 }
-.slider .slick-slide {
+.slider .slider_div img, .slider2 .slider_div img {
+  width: 50%;
+}
+.slider .slick-slide, .slider2 .slick-slide {
   margin: 0; /*スライド左右の余白調整*/
 }
 
@@ -226,18 +263,4 @@ footer {
 .footer_text {
   text-align: center;
   font-size: 12px;
-}
-
-.main_logo {
-  position: absolute;
-  top: 50vh;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  z-index: 1;
-  height: 186px;
-  width: 186px;
-  border-radius: 50%;
-  background-color: #FFF;
 }/*# sourceMappingURL=style.css.map */

@@ -59,6 +59,19 @@ img {
         }
     }
 }
+.main_logo {
+  position: absolute;
+  top: 50vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  z-index: 1;
+  height: 186px;
+  width: 186px;
+  border-radius: 50%;
+  background-color: #FFF;
+}
 
 .top_works {
     text-align: center;
@@ -139,6 +152,28 @@ a.btn-flat:before {
 // Worksここから
 .works {
     text-align: center;
+    h1 {
+      line-height: 1.6rem;
+    }
+    h1 span {
+      font-size: 1.2rem;
+    }
+    section {
+      padding: 1.5rem 0;
+      .works_item {
+        width: 95%;
+        padding: 1rem 3rem;
+        margin-top: .6rem;
+        margin: .6rem auto 0 auto;
+        border-radius: 4%;
+        &:hover {
+          background-color: rgba(204, 210, 226, 0.26);
+          transition-duration: .8s;
+          cursor: pointer;
+        }
+      }
+      
+    }
 }
 // worksここまで
 
@@ -196,11 +231,13 @@ a.btn-flat:before {
 /*==================================================
 スライダーのためのcss
 ===================================*/
-.slider {
+.slider,.slider2 {
+  .slider_div {
+    margin: 1rem -6rem;
     img {
-        width: 75%;
-        height: auto;
+      width: 50%;
     }
+  }
     /*slickのJSで書かれるタグ内、スライド左右の余白調整*/
     .slick-slide {
         margin: 0;/*スライド左右の余白調整*/
@@ -227,17 +264,5 @@ footer{
     font-size: 12px;
   }
 
-.main_logo {
-    position: absolute;
-    top: 50vh;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    z-index: 1;
-    height: 186px;
-    width: 186px;
-    border-radius: 50%;
-    background-color: #FFF;
-}
+
 
