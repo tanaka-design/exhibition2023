@@ -1,4 +1,29 @@
 @charset "UTF-8";
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a::after {
+  position: absolute;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #000000;
+  bottom: -1px; /*アンダーラインがaタグの下端から現れる*/
+  transform: scale(0, 1); /*アンダーラインの縮尺比率。ホバー前はx方向に0*/
+  transform-origin: left top; /*変形（アンダーラインの伸長）の原点がaタグ（各メニュー）の左端*/
+  transition: transform 0.3s; /*変形の時間*/
+}
+a:hover::after {
+  transform: scale(1, 1);
+}
+
+h1 {
+  margin-bottom: 1rem;
+  letter-spacing: 0.2rem;
+}
+
 body {
   font-family: noto-serif, serif;
   font-weight: 400;
@@ -166,6 +191,7 @@ img {
 }
 .works section .works_item:hover {
   background-color: rgba(204, 210, 226, 0.26);
+  scale: 1.01;
   transition-duration: 0.8s;
   cursor: pointer;
 }
@@ -230,16 +256,33 @@ img {
 スライダーのためのcss
 ===================================*/
 .slider, .slider2 {
+  margin-bottom: 1rem;
   /*slickのJSで書かれるタグ内、スライド左右の余白調整*/
 }
 .slider .slider_div, .slider2 .slider_div {
-  margin: 1rem -6rem;
+  margin: 0 -5rem;
 }
 .slider .slider_div img, .slider2 .slider_div img {
   width: 50%;
 }
 .slider .slick-slide, .slider2 .slick-slide {
   margin: 0; /*スライド左右の余白調整*/
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto 2.5rem auto;
+  padding: 1rem 0;
+}
+header .title {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+header nav {
+  font-size: 1.1rem;
 }
 
 footer {

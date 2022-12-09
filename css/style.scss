@@ -1,4 +1,32 @@
 @charset "UTF-8";
+// 共通スタイルここから
+a {
+  text-decoration: none;
+  color: inherit;
+  &::after {
+      position: absolute;
+      left: 0;
+      content: '';
+      width: 100%;
+      height: 2px;
+      background: #000000;
+      bottom: -1px;               /*アンダーラインがaタグの下端から現れる*/
+      transform: scale(0, 1);     /*アンダーラインの縮尺比率。ホバー前はx方向に0*/
+      transform-origin: left top; /*変形（アンダーラインの伸長）の原点がaタグ（各メニュー）の左端*/
+      transition: transform 0.3s; /*変形の時間*/
+  }
+  &:hover {
+    &::after {
+      transform: scale(1,1);
+    }
+  } 
+}
+h1 {
+  margin-bottom: 1rem;
+  letter-spacing: .2rem;
+}
+// 共通スタイルここまで
+
 body {
     font-family: noto-serif, serif;
     font-weight: 400;
@@ -168,6 +196,7 @@ a.btn-flat:before {
         border-radius: 4%;
         &:hover {
           background-color: rgba(204, 210, 226, 0.26);
+          scale: (1.01);
           transition-duration: .8s;
           cursor: pointer;
         }
@@ -232,8 +261,9 @@ a.btn-flat:before {
 スライダーのためのcss
 ===================================*/
 .slider,.slider2 {
+  margin-bottom: 1rem;
   .slider_div {
-    margin: 1rem -6rem;
+    margin: 0 -5rem;
     img {
       width: 50%;
     }
@@ -242,6 +272,23 @@ a.btn-flat:before {
     .slick-slide {
         margin: 0;/*スライド左右の余白調整*/
     }
+}
+
+// header
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto 2.5rem auto;
+  padding: 1rem 0;
+  .title {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  nav {
+    font-size: 1.1rem;
+  }
 }
 
 // footer //
