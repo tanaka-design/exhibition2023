@@ -246,7 +246,7 @@ img {
     align-items: center;
   }
   .topView_left {
-    height: 55%;
+    height: 50%;
   }
   .topView_right {
     height: 45%;
@@ -270,7 +270,7 @@ img {
     margin-bottom: 25px;
   }
   .topView_right_item .texts {
-    margin: 50px auto 0 auto;
+    margin: 0 auto;
   }
   .topView_right_item .texts h1 {
     font-size: 3rem;
@@ -280,7 +280,7 @@ img {
     margin: 0 auto 3rem auto;
   }
   .main_logo {
-    top: 45vh;
+    top: 50vh;
     height: 5rem;
     width: 5rem;
   }

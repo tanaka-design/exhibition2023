@@ -285,7 +285,7 @@ a.btn-flat:before {
     align-items: center;
   }
   .topView_left {
-    height: 55%;
+    height: 50%;
   }
   .topView_right {
     height: 45%;
@@ -308,7 +308,7 @@ a.btn-flat:before {
     height: auto;
     margin-bottom: 25px;
     .texts {
-      margin: 50px auto 0 auto;
+      margin: 0 auto;
       h1 {
         font-size: 3rem;
         width: fit-content;
@@ -317,7 +317,7 @@ a.btn-flat:before {
     }
   }
   .main_logo {
-    top: 45vh;
+    top: 50vh;
     height: 5rem;
     width: 5rem;
   }
