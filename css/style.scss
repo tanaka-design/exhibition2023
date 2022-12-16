@@ -405,6 +405,55 @@ a.btn-flat:before {
   }
 // Courseここまで
 
+//Access
+
+.access {
+  text-align: center;
+  h1 {
+    line-height: 1.6rem;
+  }
+  h1 span {
+    font-size: 1.2rem;
+  }
+  p {
+      margin-bottom: 30px;
+      br {
+          line-height: 2rem;
+      }
+  }
+}
+.googlemap {
+  margin: 30px 0;
+  iframe {
+      display: block;
+      margin: 0 auto;
+      width: 55vw;
+      height: 35vw;
+  }
+}
+
+@include tab {
+  .googlemap {
+    margin: 24px;
+    iframe {
+      width: 60vw;
+      height: 40vw;
+    }
+  }
+}
+
+@include sp {
+  .googlemap {
+    margin: 18px 0;
+    iframe {
+      width: 65vw;
+      height: 45vw;
+    }
+  }
+}
+
+//Access ここまで
+
 /*==================================================
 スライダーのためのcss
 ===================================*/
@@ -458,6 +507,5 @@ footer{
     text-align :center;
     font-size: 12px;
   }
-
 
 
