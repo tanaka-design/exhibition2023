@@ -1,11 +1,15 @@
 @charset "UTF-8";
-a {
+li a {
   position: relative;
   text-decoration: none;
   color: inherit;
 }
+<<<<<<< HEAD
 
 a::after {
+=======
+li a::after {
+>>>>>>> 298ec3d0609d3234b5e25c9e9d02c38550579eb5
   position: absolute;
   left: 0;
   content: '';
@@ -26,10 +30,15 @@ a::after {
   transition: transform 0.5s, -webkit-transform 0.5s;
   /*変形の時間*/
 }
+<<<<<<< HEAD
 
 a:hover::after {
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
+=======
+li a:hover::after {
+  transform: scale(1, 1);
+>>>>>>> 298ec3d0609d3234b5e25c9e9d02c38550579eb5
 }
 
 h1 {
@@ -48,9 +57,6 @@ img {
 }
 
 @media screen and (max-width: 480px) {
-  #header {
-    display: none;
-  }
   nav {
     display: none;
   }
