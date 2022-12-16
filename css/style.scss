@@ -428,7 +428,27 @@ a.btn-flat:before {
       display: block;
       margin: 0 auto;
       width: 55vw;
-      height: 30vw;
+      height: 35vw;
+  }
+}
+
+@include tab {
+  .googlemap {
+    margin: 24px;
+    iframe {
+      width: 60vw;
+      height: 40vw;
+    }
+  }
+}
+
+@include sp {
+  .googlemap {
+    margin: 18px 0;
+    iframe {
+      width: 65vw;
+      height: 45vw;
+    }
   }
 }
 
@@ -487,6 +507,5 @@ footer{
     text-align :center;
     font-size: 12px;
   }
-
 
 
