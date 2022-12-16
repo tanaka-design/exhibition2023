@@ -21,7 +21,7 @@ $sp: 480px;  // スマホ
 }
 
 // 共通スタイルここから
-a {
+li a {
   position: relative;
   text-decoration: none;
   color: inherit;
@@ -58,9 +58,9 @@ img {
 
 // ハンバーガーメニューここから
 @include sp {
-  #header {
-    display: none;
-  }
+  // #header {
+  //   display: none;
+  // }
   nav {
     display: none;
   }

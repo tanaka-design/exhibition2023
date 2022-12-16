@@ -1,10 +1,10 @@
 @charset "UTF-8";
-a {
+li a {
   position: relative;
   text-decoration: none;
   color: inherit;
 }
-a::after {
+li a::after {
   position: absolute;
   left: 0;
   content: "";
@@ -16,7 +16,7 @@ a::after {
   transform-origin: left top; /*変形（アンダーラインの伸長）の原点がaタグ（各メニュー）の左端*/
   transition: transform 0.5s; /*変形の時間*/
 }
-a:hover::after {
+li a:hover::after {
   transform: scale(1, 1);
 }
 
@@ -36,9 +36,6 @@ img {
 }
 
 @media screen and (max-width: 480px) {
-  #header {
-    display: none;
-  }
   nav {
     display: none;
   }
