@@ -405,8 +405,81 @@ a.btn-flat:before {
   }
 // Courseここまで
 
-//Access
+// Interviewここから
+.ques_box {
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
 
+.ques_flex {
+  display: flex;
+  justify-content: center;
+}
+
+.quesIcon_box {
+  text-align: center;
+}
+
+.quesIconOrigin {
+  width: 100px;
+}
+
+.quesIcon {
+  background-color: #efefef;
+  width: 5em;
+  height: 5em;
+  border-radius: 100%;
+  margin: 0 auto;
+}
+
+.quesName {
+  font-size: 20px;
+  width: 100px;
+}
+
+.quesComment {
+  background-color: #efefef;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 350px;
+  margin: 40px 25px;
+  border-radius: 10px;
+}
+
+.quesnav {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.quesnav ul {
+  margin: 0;
+  padding: 0;
+}
+
+.quesnav li {
+  list-style: none;
+  display: inline-block;
+  width: 10%;
+  min-width: 90px;
+}
+
+.quesnav li:not(:last-child) {
+  border-right: 2px solid #ddd;
+}
+
+.quesnav a.current {
+  color: #00B0F0;
+  border-bottom: 2px solid #00B0F0;
+}
+
+.quesnav a:hover {
+  color: #F7CB4D;
+  border-bottom: 2px solid #F7CB4D;
+}
+// interviewここまで
+
+//Accessここから
 .access {
   text-align: center;
   h1 {
